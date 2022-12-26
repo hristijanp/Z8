@@ -1,0 +1,32 @@
+Z8. Brojot na povtoruvanja na broevite 3,5, i 7 pripagja na nizata od Fibonaci
+
+int prv = 1;
+            int vtor = 1;
+            int tret = prv + vtor;
+            int brojac = 7;
+            int brojac3 = 0;
+            int brojac5 = 0;
+            int brojac7 = 0;
+
+            for(int i = 2; i < brojac; i++)
+            {
+                prv = vtor;
+                vtor = tret;
+                tret = prv + vtor;
+                
+                if(i == 3)
+                {
+                    brojac3++;
+                }else if(i == 5)
+                {
+                    brojac5++;
+                }else if(i == 7)
+                {
+                    brojac7++;
+                }
+
+            };
+            
+            Console.WriteLine(brojac3);
+            Console.WriteLine(brojac5);
+            Console.WriteLine(brojac7);
